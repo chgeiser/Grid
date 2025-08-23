@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-areas: 'header header header'
+                         'aside main main'
+                         'aside main main'
+                         'aside main main'
+                         'footer footer footer';
+    grid-template-columns: 150px auto auto;
+    grid-template-rows: 50px 1fr auto;
+    
+}
+
+
+.box{ 
+    background-color: white;
+    width: 250px;
+    height: 350px;
+    color: black;
+    padding: 2rem;
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    width: 200px;
+    height: 300px;  
+}
+
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: #e07715;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    }
+
+
+.header{
+    background-color: rgb(211, 230, 236);
+    grid-area: header;
+    color:rgb(14, 5, 5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    /*border: 1px solid black;*/
+}
+
+.aside{
+    background-color: rgb(221, 238, 245);
+    grid-area: aside;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px ;
+    /*border: 1px solid black;
+    flex-grow: 1;*/
+}
+
+li{
+    list-style: none;
+}
+
+.main{
+    background-color: rgb(245, 241, 241);
+    grid-area: main;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    overflow-y: scroll;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.footer{
+    background-color: rgb(252, 243, 243);
+    color:black;
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+    /*border: 1px solid black;*/
+}
