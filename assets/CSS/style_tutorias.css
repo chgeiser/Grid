@@ -31,15 +31,14 @@
     align-items: center;
 }
 
-img{
-    width: 250px;
-    height: 250px;  
-}
-
-p{
+.boxImagen{ 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 20px;
-    text-align: center;
+    
 }
 
 button{
